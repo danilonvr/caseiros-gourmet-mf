@@ -1,51 +1,35 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.scss'
-import {FaWhatsapp,FaInstagram} from 'react-icons/fa'
+import logo from "../../../assets/logo-caseiros.png"
+import {IoRestaurantOutline,IoCartOutline,IoMdContact} from 'react-icons/all'
+
 function Header() {
-
-const [active,setActive] = useState(false)
-
-function isActive(){
-  setActive(!active)
-}
-
   return (
-
-    <header className='bg-header'>
-      <div className="header">
-        <Link to='/' className='logo'>
-          <img src='/icon.svg' alt="logo-caseiros" />
+    <>
+    <div className="wrapper">
+      <div className="logo">
+        <img src={logo} alt="logo"/>
+      </div>
+      <nav className="navbar">
+        <Link to="/" className='link-navbar'>
+        <IoRestaurantOutline size={30} color="#fff"/>
         </Link>
-      <nav> 
-      <div className={active ? 'menu-header active' : 'menu-header'}>
+        <Link to="/" className='link-navbar'>
+        <IoCartOutline size={30} color="#fff"/>
+        </Link>
+        <Link to="/" className='link-navbar'>
+        <IoMdContact size={30} color="#fff"/>
+        </Link>
 
-          <ul className='menu-list'>
-            <li>Home</li>
-            <li>Cardápio</li>
-            <li>Encomendas</li>
-          </ul>
-          <div className="social-media">
-            <a href='https://api.whatsapp.com/send?phone=5561996045544&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.' target="blank" className='whats-btn'>
-              <FaWhatsapp  color='#fff' className='whats'/>
-            </a> 
-            <a href="https://www.instagram.com/caseirosgourmetmarmitaria/" target='blank' className='insta-btn'>
-              <FaInstagram color='#fff' className='insta'/>
-            </a>
-          </div>
-      </div>
       </nav>
-      
-      <div className={active ? 'mobile-menu active' : 'mobile-menu'} onClick={isActive}>
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
-      </div>
-      
-    </header>
-  )
+    </div>
+    </>
+    )
 }
+
+ 
+
 
 export default Header
 
