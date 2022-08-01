@@ -43,3 +43,30 @@ footer{
     }
 }
 
+@media screen and (min-width: 768px) {
+    footer{
+        flex-direction: row;
+        .footer-text-start{
+           span{
+            font-size: 1.4em;
+           }
+           h3{
+            font-size: 2em;
+            text-align: center;
+           }
+        }
+        .footer-icons{
+            margin: 0;
+        }
+        .footer-text-end{
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.39em;
+            text-align: center;
+            h2{
+                font-size: 1.38em;
+            }
+        }
+    }
+    
+}
