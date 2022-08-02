@@ -1,6 +1,23 @@
 @import '../../../styles/colors.scss';
 
-
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2em .4em;
+    .logo{
+        img{
+            border-radius: 50%;
+            width: 20%;
+        }
+    }
+    background: $header-bg;
+    padding: .5em 0;
+    h2{
+        color: $white;
+        text-align: center;
+    }
+}
 // .bg-header{
 //     background-color: rgba(0,0,0,0.5);
 //     position: fixed;
