@@ -1,22 +1,27 @@
 @import '../../../styles/colors.scss';
 
 .header{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: .2em .4em;
-    .logo{
-        img{
-            border-radius: 50%;
-            width: 20%;
-        }
-    }
+    justify-content: space-around;
     background: $header-bg;
-    padding: .5em 0;
-    h2{
+    padding: .3em 0 .3em .3em;
+    img{
+        border-radius: 50%;
+        width: 10%;
+    }
+    span{
         color: $white;
         text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
     }
+
 }
 // .bg-header{
 //     background-color: rgba(0,0,0,0.5);

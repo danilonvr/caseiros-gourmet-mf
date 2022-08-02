@@ -20,8 +20,7 @@ function Home() {
     <div className='home'>
     <section className='first-section'>
       <div className="first-section-text">
-      <h1>Bem-Vindo a</h1>
-      <p>Caseiros Gourmet</p>
+      <h1>Caseiros Gourmet</h1>
       <p>Alimentação Saudável</p>
       <button type='button' className='btn'>Conheça nosso Cardápio</button>
       </div>

@@ -2,16 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.scss'
 import logo from "../../../assets/logo-caseiros.png"
-import {IoRestaurantOutline,IoCartOutline,IoMdContact} from 'react-icons/all'
+import {IoRestaurantOutline,IoCartOutline,IoMdContact,ImWhatsapp} from 'react-icons/all'
 
 function Header() {
   return (
     <>
     <header className='header'>
-      <div className="logo">
         <img src={logo} alt="logo"/>
-      </div>
-      <h3>Bem-Vindo</h3>
+        <span>Bem-Vindo</span>
+        <a target="blank" href='https://api.whatsapp.com/send?phone=5561996045544&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido!'>
+        <ImWhatsapp size={30} color="#fff"/>
+        </a>
     </header>
     <div className="wrapper">
       <nav className="navbar">
