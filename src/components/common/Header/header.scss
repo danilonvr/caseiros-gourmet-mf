@@ -1,6 +1,8 @@
 @import '../../../styles/colors.scss';
 
 .header{
+    backdrop-filter: blur(.3em);
+    -webkit-backdrop-filter: blur(.3em);
     z-index: 2;
     position: fixed;
     top: 0;
@@ -8,203 +10,28 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: $header-bg;
+    background: $white;
+    opacity: .8;
     padding: .3em 0 .3em .3em;
     img{
         border-radius: 50%;
         width: 10%;
     }
-    span{
-        color: $white;
-        text-align: center;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
-    }
-
-}
-// .bg-header{
-//     background-color: rgba(0,0,0,0.5);
-//     position: fixed;
-//     top: 0;
-//     backdrop-filter: blur(0.2rem);
-//     -webkit-backdrop-filter: blur(5px);
-//     width: 100%;
-//     z-index: 0;
-//     display: flex;
-
-//     .header{
-//         z-index: 1;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         width: 100%;
-//         padding: 0 .5em 0 .5em;  
-
-//         .menu-header{
-//             position: absolute;
-//             top: 0;
-//             right: 0;
-//             text-align: right;
-//             border-radius: 7em 0 0 0;
-//             background: #FF7A42;
-//             width: 50%;
-//             height: 100vh;
-//             transform: translateX(100%);
-//             transition: transform 0.3s ease-in;
-//             z-index: 0;
-
-//             .menu-list{
-//                 height: 50vh;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: space-between;
-//                 align-items: center;
-//                 &:first-child{
-//                     margin-top: 7em;
-//                 }
-
-//                 li{
-//                     font-size: 1.3em;
-//                     color: #fff;
-//                 }
-//             }
-
-//             .social-media{
-//                 width: 100%;
-//                 display: flex;
-//                 justify-content: space-evenly;
-//                 align-items: center;
-//                 margin-top: 6em;
-
-//                 .whats-btn{
-//                     background: #5c9748;
-//                     border-radius: .4em;
-//                     padding: .25em;
-//                     display: flex;
-//                     align-items:center;
-//                     transition: all 0.1s;
-//                     &:hover{
-//                         background:#004000;
-//                     }
-//                 }
-
-//                 .insta-btn{
-//                     background: #b300d9; 
-//                     border-radius: .4em;
-//                     padding: .25em;
-//                     display: flex;
-//                     &:hover{
-//                         background: #9D50BB; 
-//                     }
-//                 }
-//             }
-//         }
-//         .active{
-//             transform: translateX(0);
-//         }
-//     }
-// }
-
-// .logo{
-//     img{
-//         padding: .3em .3em;
-//         width: 85%;
-//         border-radius: 0;
-//     }
-// }
-
-// .mobile-menu{
-//     display: block;
-//     cursor: pointer;
-//     div{
-//         width: 2em;
-//         height: 2px;
-//         background:#fff;
-//         margin:8px;
-//     }
-// }
-
-// @media screen and (min-width: 768px) {
-//     .bg-header{
-//         .header{
-//             padding: 0 1em;
-//             .menu-header{
-//                 .menu-list{
-//                     justify-content: space-around;
-//                     &:first-child{
-//                         margin-top: 8em;
-//                     }
-//                     li{
-//                         font-size: 2.1em;
-//                         font-weight: bold;
-//                     }
-//                 }
-//                 .social-media{
-//                     margin-top: 6em;
-//                     .whats-btn{
-//                         font-size: 5em;
-//                         border-radius: 50%;
-//                         .whats{
-//                             font-size: .5em;
-//                         }
-//                     }
-//                     .insta-btn{
-//                         font-size: 3.4em;
-//                         border-radius: 50%;
-//                         .insta{
-//                             font-size: 1em;
-//                         }
-//                     }
-//                 }
-//             }
-//         }     
-//     }
-//     .logo{
-//         img{
-//             padding: 1em 1em;
-//             width: 100%;
-//             height: 7.4em;
-//         }         
-//     }
-//     .mobile-menu{
-//         width: 5em;
-//         div{
-//             width: 3em;
-//             height: 5px;
-//         }
-//     }
-    
-   
-// }
-.wrapper{
-    padding: .5em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 1px solid $border;
-    background: $navbar-bg;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo{
-        display: none;
-        img{
-            padding: .75em;
-            border-radius: 50%;
-            width: 30%;
-        }  
-    }
-    .navbar{
-        width: 100%;
-        display: flex;
-        overflow: none;
-        justify-content: space-around;
-        .link-navbar{
-            &:nth-last-child(-n+2){
-                margin-left: 2em;
-            }
+    .header-text{
+        background: $header-bg;
+        padding: .3em .5em;
+        border-radius: 1em;
+        span{
+            color: $white;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
         }
     }
+    a{
+        padding-top: .2em;
+    }
+
 }
+
