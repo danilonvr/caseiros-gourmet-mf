@@ -1,30 +1,38 @@
 @import '../../../styles/colors.scss';
 
-.header{
+
+.header-blur{
+    width: 100%;
+    height: 7%;
     backdrop-filter: blur(.3em);
     -webkit-backdrop-filter: blur(.3em);
     z-index: 2;
+    position: fixed;
+    opacity: .9;
+    background: $white;
+}
+.header{
+    
+    z-index: 3;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: $white;
-    opacity: .8;
     padding: .3em 0 .3em .3em;
     img{
         border-radius: 50%;
         width: 10%;
     }
     .header-text{
-        background: $header-bg;
+        background: $header-text-bg;
         padding: .3em .5em;
         border-radius: 1em;
         span{
             color: $white;
             text-align: center;
-            font-weight: bold;
+            font-weight: bolder;
             font-family: 'Roboto', sans-serif;
             font-size: 1.2rem;
         }
@@ -35,3 +43,26 @@
 
 }
 
+
+@media screen and (min-width: 768px){
+    .header-blur{
+        height: 11%;
+    }
+    .header{
+        padding: .5em 0;
+        img{
+            width: 13%;
+        }
+        .header-text{
+            span{
+                font-size: 2em;
+            }
+        }
+        a{
+           svg{
+            width: 3.5em;
+            height: 3.5em;
+           }
+        }
+    }
+}
