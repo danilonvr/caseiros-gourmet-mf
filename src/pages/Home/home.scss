@@ -123,7 +123,9 @@
         }
     }
     .third-section{
-        
+        .btn{
+            font-size: 1.5em;
+        }
         .third-home-section-info{
             margin: 1.2em 0;
             &:first-child{
@@ -155,4 +157,5 @@
     }
  
 }
+
     

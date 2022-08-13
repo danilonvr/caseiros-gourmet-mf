@@ -71,3 +71,18 @@ footer{
     }
     
 }
+
+
+@media screen and (min-width: 1024px){
+ footer{
+    margin-bottom: 4.8em;
+    .footer-text-end{
+        h2{
+            margin-bottom: 1em;
+        }
+    }
+    .footer-icons{
+        margin-top: 1em;
+    }
+ }   
+}
